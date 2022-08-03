@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        
+        
+
+    </head>
+    <body style="background-image: url('img2.jpg');" ><center>
+        <div class="container">
+            <br><br>
+            <h1><em>Candidate Registration Form</em></h1>
+            <hr>
+            <form name="frm" action="Register.py" method="post">
+                <table>
+                    <tr>
+                        <td><h6>Candidate Name</h6> </td>
+                        <td><input type="text" name="ufnm" class="form-control">
+                                  </td>
+                                  <td>
+                                    <div id="mess"></div>
+                                  </td>
+                    </tr>
+                    <tr>
+                        <td><h6>Password</h6></td>
+                        <td><input type="password" name="psw"  class="form-control" onfocus="makeGetRequest()"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><h6>Age</h6></td>
+                        <td><input type="number" name="age" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><h6>City</h6></td>
+                        <td>
+                            <select name="ct" class="form-control">
+                                <option value="Arvi">Arvi</option>
+                                <option value="Talegao">Talegao</option>
+                                <option value="Ashti">Asthi</option>
+                                <option value="Chondi">Chondi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>Mobile</h6></td>
+                        <td><input type="tel" name="mob" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Register" class="form-control"></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </form>
+
+        </div>
+    </body>
+</html>
